@@ -39,7 +39,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
                 configureKotlinAndroid(this)
                 testOptions.targetSdk = 36
                 lint.targetSdk = 36
-                defaultConfig.targetSdk = 36
+//                defaultConfig.targetSdk = 36
                 defaultConfig.testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
                 testOptions.animationsDisabled = true
                 configureFlavors(this)

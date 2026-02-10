@@ -35,8 +35,16 @@ dependencies {
 
     testImplementation(libs.hilt.android.testing)
     testImplementation(libs.robolectric)
-    testImplementation(projects.core.testing)
+    testDemoImplementation(projects.core.testing)
     testDemoImplementation(projects.core.screenshotTesting)
+
+    testImplementation(projects.core.dataTest)
+    testImplementation(projects.core.datastoreTest)
+    testImplementation(projects.sync.syncTest)
+    testImplementation(libs.kotlin.test)
+
+    testDemoImplementation(libs.androidx.navigation.testing)
+    testDemoImplementation(libs.roborazzi)
 
     androidTestImplementation(libs.bundles.androidx.compose.ui.test)
     androidTestImplementation(projects.core.testing)

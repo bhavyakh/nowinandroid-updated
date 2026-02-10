@@ -107,6 +107,7 @@ class BookmarksScreenTest {
             )
             .assertExists()
             .assertHasClickAction()
+        assert(false)
     }
 
     @Test

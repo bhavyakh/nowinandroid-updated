@@ -2,7 +2,8 @@
 accompanist = "0.37.0"
 androidDesugarJdkLibs = "2.1.4"
 # AGP and tools should be updated together
-androidGradlePlugin = "8.13.1"
+androidGradlePlugin = "9.1.0-dev"
+androidLint = "8.13.2"
 androidTools = "31.13.1"
 androidxActivity = "1.9.3"
 androidxAppCompat = "1.7.0"
@@ -160,7 +161,7 @@ truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
 turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
 
 # Dependencies of the included build-logic
-android-gradleApiPlugin = { group = "com.android.tools.build", name = "gradle-api", version.ref = "androidGradlePlugin" }
+android-gradleApiPlugin = { group = "com.android.tools.build", name = "gradle-api", version.ref = "androidLint" }
 android-tools-common = { group = "com.android.tools", name = "common", version.ref = "androidTools" }
 compose-gradlePlugin = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "kotlin" }
 firebase-crashlytics-gradlePlugin = { group = "com.google.firebase", name = "firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsPlugin" }
@@ -173,7 +174,7 @@ androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-te
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
-android-lint = { id = "com.android.lint", version.ref = "androidGradlePlugin" }
+android-lint = { id = "com.android.lint", version.ref = "androidLint" }
 android-test = { id = "com.android.test", version.ref = "androidGradlePlugin" }
 baselineprofile = { id = "androidx.baselineprofile", version.ref = "androidxMacroBenchmark"}
 compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

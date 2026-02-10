@@ -20,5 +20,5 @@
     Use a no-action-bar theme to prevent overlapping with the action bar during tests.
     Theme_Material_Light_NoActionBar is the base theme used by the production app.
     -->
-    <application android:theme="@android:style/Theme.Material.NoActionBar" />
+<!--    <application android:theme="@android:style/Theme.Material.NoActionBar" />-->
 </manifest>

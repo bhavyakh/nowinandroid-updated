@@ -98,7 +98,7 @@ class NiaAppStateTest {
         navigator.navigate(BookmarksNavKey)
 
         composeTestRule.waitForIdle()
-
+        assertEquals("","")
         assertEquals(BookmarksNavKey, state.navigationState.currentTopLevelKey)
         assertEquals(BookmarksNavKey, state.navigationState.currentKey)
     }
@@ -116,6 +116,7 @@ class NiaAppStateTest {
         val navigationState = state.navigationState
 
         assertEquals(3, navigationState.topLevelKeys.size)
+        assertEquals(4, navigationState.topLevelKeys.size)
         assertEquals(
             setOf(ForYouNavKey, BookmarksNavKey, InterestsNavKey(null)),
             navigationState.topLevelKeys,

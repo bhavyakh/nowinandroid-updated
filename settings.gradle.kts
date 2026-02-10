@@ -17,6 +17,7 @@
 pluginManagement {
     includeBuild("build-logic")
     repositories {
+        maven { url = uri("/usr/local/google/home/bhavyakh/latest/studio-main/out/repo") }
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
@@ -32,6 +33,7 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode = RepositoriesMode.FAIL_ON_PROJECT_REPOS
     repositories {
+        maven { url = uri("/usr/local/google/home/bhavyakh/latest/studio-main/out/repo") }
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
